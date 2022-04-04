@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./pro.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="icon" href="/masterMinds_OTA/img/icologo.ico">
+    <script src="https://kit.fontawesome.com/b4ff4e859b.js" crossorigin="anonymous"></script>
+
+    <title>About Us</title>
+    <style>
+       *{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{ background-image: url("../img/bg.jpg");
+  font-family: montserrat;
+}
+nav{
+    background-color: #525;
+      height:40px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+*{
+  color: #d9d9d9;
+ 
+}
+
+footer{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background: rgb(73, 6, 93);
+}
+.main-content{
+  display: flex;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+
+.left .content .social a span{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .content .social a span:hover{
+  background: #f12020;
+}
+.center .content .fas{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content .fas:hover{
+  background: #f12020;
+}
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+   
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">OTA</label>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li class="item"><a href="../../index.html" onclick="logout()">Login</a></li>
+         
+        </ul>
+      </nav>
+
+    <body id="main" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#myNavbar">
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>
+        
+                    </button>
+        
+        
+           
+        </body>
+    <div id="about-cont" class="about-cont">
+            <h1> OTA Team </h1>
+        <!--   Aya info. -->
+        <div id="team" class="info-box aya bdr">
+            <div id="info-contant"> <img src="../img/aya.jpg" alt="aya pic" class="team-pic"> </div>
+            <div id="info-contant min-hei">
+                <h2>Aya AlSawa </h2>
+                <h4>Full Stack Developer</h4>
+                <a href="https://github.com/11-ayaalsawa" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>&emsp;
+                <a href="https://jo.linkedin.com/in/aya-alsawa-26bb74232?trk=people-guest_people_search-card" target="_blank"style="margin-left: 7%;"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+
+            </div>
+        </div>
+
+
+        <!-- Obada info -->
+        <div id="team" class="info-box obada bdr" >
+            <div id="info-contant"> <img src="../img/obada.PNG" alt="obada pic" class="team-pic"></div>
+                <div id="info-contant min-hei">
+                    <h2>Obada AlShafeey </h2>
+                    <h4> Full Stack Developer</h4>
+                    <a href="https://github.com/obadaalshafeey" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>&emsp;
+                    <a href="https://www.linkedin.com/in/obada-alshafeey-735b3518b/" target="_blank" style="margin-left: 7%;"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                </div>
+                </div>
+
+                <!-- Tamara info -->
+                <div id="team" class="info-box tamara bdr">
+                    <div id="info-contant"><img src="../img/tamara.png" alt="Tamara pic" class="team-pic"></div>
+                    <div id="info-contant min-hei"> <h2>Tamara AlShabatat</h2> <small> Leader</small>
+                    <h4> Full Stack Developer</h4>
+                    <a href="https://github.com/tamara126enad/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>&emsp;
+                    <a href="https://www.linkedin.com/in/tamara-al-shabatat-060452123/" target="_blank" style="margin-left: 7%;"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+         
+            <div class="content1">
+               
+              </div>
+
+              <footer style="margin-top:-10%;">
+                <div id="footer" class="footer" >
+                    <P id="pf" class="pf"> All Copyright @ Reserved </P>
+                    <P id="ota" class="ota"> Desgined by OTA, 2022 </P>
+        
+                </div>
+            </footer>
+              <!-- <footer>
+                <div class="main-content">
+                  <div class="left box">
+                    <h2>About </h2>
+                    <div class="content">
+                      <p>OTA</p>
+                      <div class="social">
+                        <a href=""><span class="fab fa-facebook-f"></span></a>
+                        <a href="#"><span class="fab fa-twitter"></span></a>
+                        <a href="#"><span class="fab fa-instagram"></span></a>
+                        <a href="#"><span class="fab fa-youtube"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="center box">
+                    <h2>Address</h2>
+                    <div class="content">
+                      <div class="place">
+                        <span class="fas fa-map-marker-alt"></span>
+                        <span class="text">JORDAN / Aqaba</span>
+                      </div>
+                      <div class="phone">
+                        <span class="fas fa-phone-alt"></span>
+                        <span class="text">+089-000000000</span>
+                      </div>
+                      <div class="email">
+                        <span class="fas fa-envelope"></span>
+                        <span class="text">abc@example.com</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right box">
+                    <h2>Contact </h2>
+                    
+                  </div>
+                </div>
+               
+                
+                  
+                </div>
+              </footer> -->
+
+
+
+
+
+
+
+</body>
+
+</html>
